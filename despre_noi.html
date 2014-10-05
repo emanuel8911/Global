@@ -1,0 +1,67 @@
+
+<html>
+	<head>
+		<title>
+			Despre noi
+		</title>
+		<link type="text/css" rel="stylesheet" href="stil.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body class="despre_noi">
+	<div id="container">
+	<div id="header">
+		<img src="logo.gif" width="643px">
+
+		</div>
+		
+		<div id="links">
+		<ul>
+			<li><a href="index.html">ACASA</a></li>
+			<li><a href="#">DESPRE NOI</a></li>
+			<li><a href="stiri.html">&#350;TIRI</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="links.html">VIDEO</a></li>
+			<li><a href="galerie.html">GLOBAL ASSURANCE</a></li>
+		</ul>
+		</div>
+		<div id="writing_despre">
+		<img src="desprenoi.png">
+		
+    <h2 style="padding:20px; text-indent:20px;"> Despre 24Broker </h2>
+	<p style="padding:20px; text-indent:20px;">CE ESTE 24Broker? <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24Broker este o aplica&#355;ie destinat&#259; Brokerilor de asigurare 
+	pentru gestionarea eficient&#259; a informa&#355;iilor privind partenerii, poli&#355;ele de asigur&#259;ri, agen&#355;i, comisioanele &#351;i 
+	portofoliul de clien&#355;i.
+Solu&#355;ia software 24Broker ofer&#259; firmelor romanesti cu domeniul de activitate broker de asigurare, o platform&#259; eficient&#259; pentru
+ gestionarea &#238ntregii activit&#259;&#355;i de brokeraj urm&#259;rind &#238ntregul circuit al unei poli&#355;e de la intrarea &#238n gestiunea 
+ brokerului pan&#259; la &#238ntoarcerea ei la societatea de asigur&#259;ri emitent&#259;.
+Aplica&#355;ia este conceput&#259; astfel &#238ncat s&#259; respecte recomand&#259;rile &#351;i reglementarile CSA fiind &#238n permanen&#355;&#259; 
+actualizat&#259; pentru a &#238ntruni cerin&#355;ele pie&#355;ei &#351;i modific&#259;rile legislative survenite.</p>
+		</div>
+		<div id="footer">
+<footer>Copyright &copy; 2014 | F&#259; parte din societatea informa&#355;ional&#259;
+<a href="#" class="back-to-top">Back to Top</a></footer>
+
+        <script>            
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+		</script>
+</div>
+	</div>
+	</body>
+</html>

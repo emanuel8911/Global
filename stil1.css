@@ -1,0 +1,40 @@
+.index_body{
+	background:tan;
+	font-family:Arial;
+	}
+	
+.despre_noi{
+	background:F2E38A;
+	font-family:"Times new roman";
+	}
+
+.stiri {
+	background:8A99F2;
+	font-family:"Courier new";
+	}
+	
+.links{
+	background:B3F2F1;
+	text-align:right;
+	}
+	
+.contact{
+	background:F2B3E9;
+	font-family:Verdana;
+	text-decoration:underline}
+
+.tabel{
+	font-family:Verdana;
+	text-decoration:underline;
+	}
+	
+#mesaj{
+	font-weight:bold;
+	text-decoration:line-through;
+	color:green;
+	}
+	
+#footer{
+	text-align:center;
+	}
+	

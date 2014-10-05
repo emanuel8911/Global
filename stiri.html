@@ -1,0 +1,80 @@
+
+<html>
+	<head>
+		<title>
+			Stiri
+		</title>
+		<link type="text/css" rel="stylesheet" href="stil.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body class="stiri">
+	<div id="container">
+	<div id="header">
+		<img src="logo.gif" width="643px">
+		
+		</div>
+		
+		<div id="links">
+		<ul>
+			<li><a href="index.html">ACASA</a></li>
+			<li><a href="despre_noi.html">DESPRE NOI</a></li>
+			<li><a href="#">&#350;TIRI</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="links.html">VIDEO</a></li>
+			<li><a href="galerie.html">GLOBAL ASSURANCE</a></li>
+		</ul>
+		</div>
+		<div id="writing_stiri">
+		<br>
+		<br>
+		<p>Asisten&#355;&#259;:<br>
+Serviciile noastre v&#259; ofer&#259; garan&#355;ia c&#259; a&#355;i ales solu&#355;ia de management
+ a activit&#259;&#355;ii de broker de asigurare potrivit&#259;, dinamic&#259; &#351;i adaptabil&#259; în permanen&#355;&#259; la orice situa&#355;ii prezente &#351;i viitoare.
+Oferim asistenta prin personal calificat pentru:
+Identificarea corect&#259; a necesit&#259;&#355;ilor &#351;i avantajelor implement&#259;rii
+Adoptarea subscrip&#355;iei 24Broker.ro potrivit&#259; organiza&#355;iei
+Utilizarea eficient&#259; a mecanismelor de personalizare
+Facilitarea interac&#355;iunii utilizatorilor cu aplica&#355;ia &#351;i instruirea acestora
+Dep&#259;&#351;irea problemelor ridicate de infrastructura software &#351;i hardware</p>
+		<img src="24broker.jpg" width="600" style="margin:10px auto 10px auto;"/>
+		<p>Servicii de Consultan&#355;&#259; &#351;i Implementare
+
+Analiza &#351;i în&#355;elegerea necesit&#259;&#355;ilor de lucru ale clientului
+Formularea strategiei de utilizare &#351;i implementare a aplica&#355;iei
+Definirea &#351;i implementarea procedurilor de lucru cu aplica&#355;ia
+Crearea documenta&#355;iei specifice de utilizare a aplica&#355;iei
+Personalizarea aplica&#355;iei cu mecanismele de personalizare incluse
+Training
+Dezvolt&#259;ri de noi func&#355;ionalit&#259;&#355;i &#351;i module specifice
+Instalarea &#351;i configurarea aplica&#355;iei 24Broker.ro
+Solu&#355;ii complete hardware & software</p>
+
+ <a href="http://www.24broker.ro/" target="_blank">Mai multe pute&#355;i g&#259;si aici</a>
+			</div>
+		<div id="footer">
+<footer>Copyright &copy; 2014 | F&#259; parte din societatea informa&#355;ional&#259;
+<a href="#" class="back-to-top">Back to Top</a></footer>
+
+        <script>            
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+		</script>
+</div>
+	</div>
+	</body>
+</html>

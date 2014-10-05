@@ -1,0 +1,132 @@
+
+<html>
+	<head>
+		<title>
+			Contact
+		</title>
+		<link type="text/css" rel="stylesheet" href="stil.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body class="contact">
+	<div id="container">
+	<div id="header">
+		<img src="logo.gif" width="643px">
+		
+		</div>
+		<div id="links">
+		<ul>
+			<li><a href="index.html">ACASA</a></li>
+			<li><a href="despre_noi.html">DESPRE NOI</a></li>
+			<li><a href="stiri.html">&#350;TIRI</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="links.html">VIDEO</a></li>
+			<li><a href="galerie.html">GLOBAL ASSURANCE</a></li>
+		</ul>
+		</div>
+		<div id="writing_contact">
+		
+		
+		<hr>
+		
+		<table width="100%" class="tabel" >
+			<tr>
+				<td>
+					<form method="post" action="url">
+						NUME: <input type="text" name="nume" size="24" class="input_settings">*<br>
+						PRENUME: <input type="text" name="prenume" size="24" class="input_settings">*<br>
+						JUDET: 	<select class="input_settings" rows="24" cols="1">
+									<option>Alegeti judetul</option>
+										<option value="AB">Alba</option>
+										<option value="AG">Arges</option>
+										<option value="AR">Arad</option>
+										<option value="B" >Bucuresti</option>
+										<option value="BC">Bacau</option>
+										<option value="BH">Bihor</option>
+										<option value="BN">Bistrita</option>
+										<option value="BR">Braila</option>
+										<option value="BT">Botosani</option>
+										<option value="BV">Brasov</option>
+										<option value="BZ">Buzau</option>
+										<option value="CJ">Cluj</option>
+										<option value="CL">Calarasi</option>
+										<option value="CS">Caras-Severin</option>
+										<option value="CT">Constanta</option>
+										<option value="CV">Covasna</option>
+										<option value="DB">Dambovita</option>
+										<option value="DJ">Dolj</option>
+										<option value="GJ">Gorj</option>
+										<option value="GL">Galati</option>
+										<option value="GR">Giurgiu</option>
+										<option value="HD">Hunedoara</option>
+										<option value="HG">Harghita</option>
+										<option value="IF">Ilfov</option>
+										<option value="IL">Ialomita</option>
+										<option value="IS">Iasi</option>
+										<option value="MH">Mehedinti</option>
+										<option value="MM">Maramures</option>
+										<option value="MS">Mures</option>
+										<option value="NT">Neamt</option>
+										<option value="OT">Olt</option>
+										<option value="PH">Prahova</option>
+										<option value="SB">Sibiu</option>
+										<option value="SJ">Salaj</option>
+										<option value="SM">Satu-Mare</option>
+										<option value="SV">Suceava</option>
+										<option value="TL">Tulcea</option>
+										<option value="TM">Timis</option>
+										<option value="TR">Teleorman</option>
+										<option value="VL">Valcea</option>
+										<option value="VN">Vrancea</option>
+										<option value="VS">Vaslui</option>
+								</select>
+								</br>
+						<dl>Oras:<br>
+						<dd>Resedinta de judet:</dd>
+								<dd><input type="radio" name="resedinta" checked>DA
+								<input type="radio" name="resedinta">NU</dd>
+						</dl>
+						E-mail: <input type="text" name="email" size="24" class="input_settings">*<br>
+						Mesaj:<br><textarea cols="20" rows="5" class="input_settings"></textarea><br>
+						<input type="reset" name="reset">
+						<input type="submit" name="trimite"><br>
+						(* Campuri obligatorii)
+					</form>
+				</td>
+				<td >
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2732.8401092615704!2d23.602679!3d46.768048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c251e02c641%3A0x941e6af45095c744!2sNet+Brinel!5e0!3m2!1sen!2s!4v1406100431442" width="400" height="300" frameborder="0" style="border:0"></iframe>
+				</td>
+			</tr>
+		</table>
+		<form method="post" action="adauga.php">
+		<input type="text" name="Nume">
+		<input type="text" name="Puteri">
+		<input type="text" name="Varsta">
+		<input type="submit" value="trimite">
+		</div>
+		<div id="footer">
+<footer>Copyright &copy; 2014 | F&#259; parte din societatea informa&#355;ional&#259;
+<a href="#" class="back-to-top">Back to Top</a></footer>
+
+        <script>            
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+		</script>
+</div>
+	</div>
+	</body>
+</html>
