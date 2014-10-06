@@ -1,12 +1,16 @@
 <html>
 	<head>
-
 		<title>
-			Galerie
+			Preturi
 		</title>
 		<link type="text/css" rel="stylesheet" href="stil.css"/>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script>
+	
+		
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+
+	<script>
 	$(document).ready(function(){	
 		$("#adauga").click(function(){
 			$("#p2").before("<li>alt element</li>");
@@ -21,18 +25,6 @@
 		});
 
 </script>
-<style>
-	#unu, #doi{
-		padding: 10px;
-		text-align: center;
-		background-color: antiquewhite;
-		border: solid 1px black;
-	}
-	#doi {
-		padding: 30px;
-		display: none;
-		}
-</style>
 	</head>
 	<body class="galerie">
 	<div id="container">
@@ -51,8 +43,44 @@
 			<li><a href="#">GLOBAL ASSURANCE</a></li>
 		</ul>
 		</div>
+
+	<script>
+		$(function() {
+			$("#calculeaza").on("click",function(){
+			var g=50+0.75*(parseInt($("#h").val())-150)+0.25*(parseInt($("#v").val())-20);
+			if($("#f").is(":checked")) g=0.9*g;
+			$("#g").val(g);
+			});
+		});
+		</script>
+		<!-- pentru preturi-->
+		<div data-role="page" id="pagina1">
+		<div data-role="header">
+			<h1>Greutatea Ideala</h1>
+		<div data-role="content">
+			<div class="ui-field-contain">
+				<label for="h">Inaltimea (cm):</label>
+				<input type="number" id="h" placeholder="introduceti inaltimea"/>
+			</div>
+			<div class="ui-field-contain">
+				<label for="v">Varsta (ani):</label>
+				<input type="number" id="v" placeholder="introduceti varsta"/>
+			</div>
+			<div class="ui-field-contain">
+				<label for="f">Femeie:</label>
+				<input type="checkbox" id="f" data-role="flipswitch" data-on-text="Da" data-off-text="Nu" data-wrapper-class="custom-label-flipswitch"/>
+			</div>
+			<div class="ui-field-contain">
+				<label for="g">Greutatea (kg):</label>
+				<input type="text" id="g" placeholder="greutatea calculata" readonly />
+			</div>
+			<button id="calculeaza">Calculeaza</button>
+			</div>
+			</div>
+			
 		<div id="writing_galerie">
 		<br>
+		
 		<p id="p1"> Avem disponibil&#259; emiterea electronic&#259; de poli&#355;e RCA pentru 12 asiguratori:
  <strong>GOTHAER, GENERALI, EUROINS, ATE, ASTRA, CARPATICA, OMNIASIG, UNIQA ,Aegon, ALLIANZ , ASIROM, GROUPAMA, CREDIT EUROPE, GRAWE &#351;i CITY INSURANCE</strong></p>
 <p id="p2"> De asemenea, prin 24Broker.ro pute&#355;i emite electronic &#351;i urm&#259;toarele tipuri de poli&#355;e: , Aegon:Life insurance
