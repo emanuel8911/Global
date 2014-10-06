@@ -1,0 +1,47 @@
+html>
+	<head>
+		<title>
+			Oferta Pret
+		</title>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" /> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+		
+<script>
+		$(function() {
+			$("#calculeaza").on("click",function(){
+			var g=50+0.75*(parseInt($("#h").val())-150)+0.25*(parseInt($("#v").val())-20);
+			if($("#f").is(":checked")) g=0.9*g;
+			$("#g").val(g);
+			});
+		});
+		</script>
+		<body>
+		<!-- pentru preturi-->
+		<div data-role="page" id="pagina1">
+		<div data-role="header">
+			<h1>Calcul Pret RCA</h1>
+		<div id="content">
+			<div class="ui-field-contain">
+				<label for="h">Capacitate Cilindrica (cm3):</label>
+				<input type="number" id="h" placeholder="introduceti cm3"/>
+			</div>
+			<div class="ui-field-contain">
+				<label for="v">Varsta (ani):</label>
+				<input type="number" id="v" placeholder="introduceti varsta"/>
+			</div>
+			<div class="ui-field-contain">
+				<label for="f">Pensionar:</label>
+				<input type="checkbox" id="f" data-role="flipswitch" data-on-text="Da" data-off-text="Nu" data-wrapper-class="custom-label-flipswitch"/>
+			</div>
+			<div class="ui-field-contain">
+				<label for="g">Pret Lei:</label>
+				<input type="text" id="g" placeholder="pretul calculat" readonly />
+			</div>
+			<button id="calculeaza">Calculeaza</button>
+			</div>
+			</div>
+<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+			
+	</body>
+</html>
